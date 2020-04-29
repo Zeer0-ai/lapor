@@ -23,7 +23,7 @@
   <link rel="icon" type="image/png" href="../assets/img/favicon.png">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
   <title>
-    Now UI Dashboard by Creative Tim
+    Pelaporan Masyarakat
   </title>
   <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, shrink-to-fit=no' name='viewport' />
   <!--     Fonts and icons     -->
@@ -35,6 +35,161 @@
   <!-- CSS Just for demo purpose, don't include it in your project -->
   <link href="../assets/demo/demo.css" rel="stylesheet" />
 </head>
+<style>
+  *,
+:before,
+:after {
+  box-sizing: border-box;
+}
+
+body {
+  background: #424242;
+}
+
+form {
+  width: 320px;
+  margin: 45px auto;
+}
+form h1 {
+  font-size: 3em;
+  font-weight: 300;
+  text-align: center;
+  color: #2196F3;
+}
+form h5 {
+  text-align: center;
+  text-transform: uppercase;
+  color: #c6c6c6;
+}
+form hr.sep {
+  background: #2196F3;
+  box-shadow: none;
+  border: none;
+  height: 2px;
+  width: 25%;
+  margin: 0px auto 45px auto;
+}
+form .emoji {
+  font-size: 1.2em;
+}
+
+.group {
+  position: relative;
+  margin: 45px 0;
+}
+
+textarea {
+  resize: none;
+}
+
+input,
+textarea {
+  background: none;
+  color: #c6c6c6;
+  font-size: 18px;
+  padding: 10px 10px 10px 5px;
+  display: block;
+  width: 320px;
+  border: none;
+  border-radius: 0;
+  border-bottom: 1px solid #c6c6c6;
+}
+input:focus,
+textarea:focus {
+  outline: none;
+}
+input:focus ~ label, input:valid ~ label,
+textarea:focus ~ label,
+textarea:valid ~ label {
+  top: -14px;
+  font-size: 12px;
+  color: #2196F3;
+}
+input:focus ~ .bar:before,
+textarea:focus ~ .bar:before {
+  width: 320px;
+}
+
+input[type="password"] {
+  letter-spacing: 0.3em;
+}
+
+label {
+  color: #c6c6c6;
+  font-size: 16px;
+  font-weight: normal;
+  position: absolute;
+  pointer-events: none;
+  left: 5px;
+  top: 10px;
+  -webkit-transition: 300ms ease all;
+  transition: 300ms ease all;
+}
+
+.bar {
+  position: relative;
+  display: block;
+  width: 320px;
+}
+.bar:before {
+  content: '';
+  height: 2px;
+  width: 0;
+  bottom: 0px;
+  position: absolute;
+  background: #2196F3;
+  -webkit-transition: 300ms ease all;
+  transition: 300ms ease all;
+  left: 0%;
+}
+
+.btn {
+  background: #fff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 3px;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  text-decoration: none;
+  outline: none;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  -webkit-transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+.btn:hover {
+  color: white;
+  box-shadow: 0 7px 14px rgba(0, 0, 0, 0.18), 0 5px 5px rgba(0, 0, 0, 0.12);
+}
+.btn.btn-link {
+  background: #2196F3;
+  color: #d3eafd;
+}
+.btn.btn-link:hover {
+  background: #0d8aee;
+  color: red;
+}
+.btn.btn-submit {
+  background: #2196F3;
+  color: #bce0fb;
+}
+.btn.btn-submit:hover {
+  background: #0d8aee;
+  color: #deeffd;
+}
+.btn.btn-cancel {
+  background: #9e1f1f;
+}
+.btn.btn-cancel:hover {
+  background: #b11414;
+  color: #8b8b8b;
+}
+
+.btn-box {
+  text-align: center;
+  margin: 50px 0;
+}
+</style>
 
 <body class="">
   <div class="wrapper ">
@@ -43,61 +198,22 @@
         Tip 1: You can change the color of the sidebar using: data-color="blue | green | orange | red | yellow"
     -->
       <div class="logo">
-        <a href="http://www.creative-tim.com" class="simple-text logo-mini">
-          CT
-        </a>
-        <a href="http://www.creative-tim.com" class="simple-text logo-normal">
-          Creative Tim
+        <a href="dashboard.php" class="simple-text logo-normal">
+          Pelaporan Masyarakat
         </a>
       </div>
       <div class="sidebar-wrapper" id="sidebar-wrapper">
         <ul class="nav">
           <li>
-            <a href="./dashboard.html">
+            <a href="dashboard.php">
               <i class="now-ui-icons design_app"></i>
               <p>Dashboard</p>
             </a>
           </li>
-          <li>
-            <a href="./icons.html">
-              <i class="now-ui-icons education_atom"></i>
-              <p>Icons</p>
-            </a>
-          </li>
-          <li>
-            <a href="./map.html">
-              <i class="now-ui-icons location_map-big"></i>
-              <p>Maps</p>
-            </a>
-          </li>
-          <li>
-            <a href="./notifications.html">
-              <i class="now-ui-icons ui-1_bell-53"></i>
-              <p>Notifications</p>
-            </a>
-          </li>
-          <li>
-            <a href="./user.html">
-              <i class="now-ui-icons users_single-02"></i>
-              <p>User Profile</p>
-            </a>
-          </li>
-          <li>
-            <a href="./tables.html">
-              <i class="now-ui-icons design_bullet-list-67"></i>
-              <p>Table List</p>
-            </a>
-          </li>
           <li class="active ">
-            <a href="./typography.html">
-              <i class="now-ui-icons text_caps-small"></i>
-              <p>Typography</p>
-            </a>
-          </li>
-          <li class="active-pro">
-            <a href="./upgrade.html">
-              <i class="now-ui-icons arrows-1_cloud-download-93"></i>
-              <p>Upgrade to PRO</p>
+            <a href="./lapor.html">
+              <i class="now-ui-icons location_map-big"></i>
+              <p>Lapor</p>
             </a>
           </li>
         </ul>
@@ -115,7 +231,7 @@
                 <span class="navbar-toggler-bar bar3"></span>
               </button>
             </div>
-            <a class="navbar-brand" href="#pablo">Typography</a>
+            <a class="navbar-brand" href="#pablo">Lapor</a>
           </div>
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation" aria-controls="navigation-index" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-bar navbar-kebab"></span>
@@ -173,85 +289,37 @@
       <div class="content">
         <div class="row">
           <div class="col-md-12">
-            <div class="card">
-              <div class="card-header">
-                <h5 class="title">Now Ui Table Heading</h5>
-                <p class="category">Created using Montserrat Font Family</p>
+            <div class="card ">
+              <div class="card-header ">
+                Pelaporan Masyarakat
               </div>
-              <div class="card-body">
-                <div class="typography-line">
-                  <h1><span>Header 1</span>The Life of Now Ui Dashboard </h1>
-                </div>
-                <div class="typography-line">
-                  <h2><span>Header 2</span>The Life of Now Ui Dashboard </h2>
-                </div>
-                <div class="typography-line">
-                  <h3><span>Header 3</span>The Life of Now Ui Dashboard </h3>
-                </div>
-                <div class="typography-line">
-                  <h4><span>Header 4</span>The Life of Now Ui Dashboard </h4>
-                </div>
-                <div class="typography-line">
-                  <h5><span>Header 5</span>The Life of Now Ui Dashboard </h5>
-                </div>
-                <div class="typography-line">
-                  <h6><span>Header 6</span>The Life of Now Ui Dashboard </h6>
-                </div>
-                <div class="typography-line">
-                  <p><span>Paragraph</span>
-                    I will be the leader of a company that ends up being worth billions of dollars, because I got the answers. I understand culture. I am the nucleus. I think that’s a responsibility that I have, to push possibilities, to show people, this is the level that things could be at.
-                  </p>
-                </div>
-                <div class="typography-line">
-                  <span>Quote</span>
-                  <blockquote>
-                    <p class="blockquote blockquote-primary">
-                      "I will be the leader of a company that ends up being worth billions of dollars, because I got the answers. I understand culture. I am the nucleus. I think that’s a responsibility that I have, to push possibilities, to show people, this is the level that things could be at."
-                      <br>
-                      <br>
-                      <small>
-                        - Noaa
-                      </small>
-                    </p>
-                  </blockquote>
-                </div>
-                <div class="typography-line">
-                  <span>Muted Text</span>
-                  <p class="text-muted">
-                    I will be the leader of a company that ends up being worth billions of dollars, because I got the answers...
-                  </p>
-                </div>
-                <div class="typography-line">
-                  <span>Primary Text</span>
-                  <p class="text-primary">
-                    I will be the leader of a company that ends up being worth billions of dollars, because I got the answers...</p>
-                </div>
-                <div class="typography-line">
-                  <span>Info Text</span>
-                  <p class="text-info">
-                    I will be the leader of a company that ends up being worth billions of dollars, because I got the answers... </p>
-                </div>
-                <div class="typography-line">
-                  <span>Success Text</span>
-                  <p class="text-success">
-                    I will be the leader of a company that ends up being worth billions of dollars, because I got the answers... </p>
-                </div>
-                <div class="typography-line">
-                  <span>Warning Text</span>
-                  <p class="text-warning">
-                    I will be the leader of a company that ends up being worth billions of dollars, because I got the answers...
-                  </p>
-                </div>
-                <div class="typography-line">
-                  <span>Danger Text</span>
-                  <p class="text-danger">
-                    I will be the leader of a company that ends up being worth billions of dollars, because I got the answers... </p>
-                </div>
-                <div class="typography-line">
-                  <h2><span>Small Tag</span>
-                    Header with small subtitle <br>
-                    <small>Use "small" tag for the headers</small>
-                  </h2>
+              <!-- <div class="card-body ">
+                <div id="map" class="map"></div>
+              </div> -->
+
+                <div class="wrapper">
+                  <form>
+                    <div class="group">
+                      <input type="text" required="required"/><span class="highlight"></span><span class="bar"></span>
+                      <label>Name</label>
+                    </div>
+                    <div class="group">
+                      <input type="text" required="required"/><span class="highlight"></span><span class="bar"></span>
+                      <label>Email</label>
+                    </div>
+                    <div class="group">
+                      <input type="text" required="required"/><span class="highlight"></span><span class="bar"></span>
+                      <label>Asal Kota</label>
+                    </div>
+                    <div class="group">
+                      <textarea type="textarea" rows="5" required="required"></textarea><span class="highlight"></span><span class="bar"></span>
+                      <label>Message</label>
+                    </div>
+                    <div class="btn-box">
+                      <button class="btn btn-submit" type="submit">submit</button>
+                      <button class="btn btn-cancel" type="button">cancel</button>
+                    </div>
+                  </form>
                 </div>
               </div>
             </div>
@@ -302,6 +370,12 @@
   <!-- Control Center for Now Ui Dashboard: parallax effects, scripts for the example pages etc -->
   <script src="../assets/js/now-ui-dashboard.min.js?v=1.5.0" type="text/javascript"></script><!-- Now Ui Dashboard DEMO methods, don't include it in your project! -->
   <script src="../assets/demo/demo.js"></script>
+  <script>
+    $(document).ready(function() {
+      // Javascript method's body can be found in assets/js/demos.js
+      demo.initGoogleMaps();
+    });
+  </script>
 </body>
 
 </html>

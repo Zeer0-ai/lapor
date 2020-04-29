@@ -23,7 +23,7 @@
   <link rel="icon" type="image/png" href="../assets/img/favicon.png">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
   <title>
-    Now UI Dashboard by Creative Tim
+    Dashboard
   </title>
   <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, shrink-to-fit=no' name='viewport' />
   <!--     Fonts and icons     -->
@@ -43,52 +43,43 @@
         Tip 1: You can change the color of the sidebar using: data-color="blue | green | orange | red | yellow"
     -->
       <div class="logo">
-        <a href="http://www.creative-tim.com" class="simple-text logo-mini">
-          CT
-        </a>
-        <a href="http://www.creative-tim.com" class="simple-text logo-normal">
-          Creative Tim
+        <a href="dashboard.php" class="simple-text logo-normal">
+          Pelaporan Masyarakat
         </a>
       </div>
       <div class="sidebar-wrapper" id="sidebar-wrapper">
         <ul class="nav">
           <li class="active ">
-            <a href="./dashboard.html">
+            <a href="dashboard.php">
               <i class="now-ui-icons design_app"></i>
               <p>Dashboard</p>
             </a>
           </li>
           <li>
-            <a href="./icons.html">
-              <i class="now-ui-icons education_atom"></i>
-              <p>Icons</p>
-            </a>
-          </li>
-          <li>
-            <a href="./lapor.html">
+            <a href="lapor.php">
               <i class="now-ui-icons location_map-big"></i>
               <p>Lapor</p>
             </a>
           </li>
-          <li>
+          <!-- <li>
             <a href="./notifications.html">
               <i class="now-ui-icons ui-1_bell-53"></i>
-              <p>Notifications</p>
+              <p>Notifikasi</p>
             </a>
-          </li>
-          <li>
-            <a href="./user.html">
+          </li> -->
+          <!-- <li>
+            <a href="user.php">
               <i class="now-ui-icons users_single-02"></i>
-              <p>User Profile</p>
+              <p>Penanggapan</p>
             </a>
-          </li>
-          <li>
+          </li> -->
+          <!-- <li>
             <a href="./tables.html">
               <i class="now-ui-icons design_bullet-list-67"></i>
-              <p>Table List</p>
+              <p>Laporan Terbaru</p>
             </a>
-          </li>
-          <li>
+          </li> -->
+          <!-- <li>
             <a href="./typography.html">
               <i class="now-ui-icons text_caps-small"></i>
               <p>Typography</p>
@@ -99,7 +90,7 @@
               <i class="now-ui-icons arrows-1_cloud-download-93"></i>
               <p>Upgrade to PRO</p>
             </a>
-          </li>
+          </li> -->
         </ul>
       </div>
     </div>
@@ -151,7 +142,7 @@
                 </a>
                 <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownMenuLink">
                   <a class="dropdown-item" href="#">Profile</a>
-                  <a class="dropdown-item" href="#">Log Out</a>
+                  <a class="dropdown-item" href="../index.php">Log Out</a>
                 </div>
               </li>
               <!-- <li class="nav-item">
@@ -333,7 +324,7 @@
           
             <div class="card">
               <div class="card-header">
-                <h5 class="card-category">New Report List</h5>
+                <h5 class="card-category">Data Pelaporan</h5>
                 <h4 class="card-title"> Laporan Terbaru </h4>
               </div>
               <div class="card-body">
@@ -347,7 +338,7 @@
                         Country
                       </th> -->
                       <th>
-                        City
+                        Kota
                       </th>
                       <!-- <th class="text-right">
                         Salary
@@ -358,72 +349,18 @@
                         <td>
                           Dakota Rice
                         </td>
-                        <!-- <td>
-                          Niger
-                        </td> -->
                         <td>
-                          Oud-Turnhout
+                          Yogyakarta
                         </td>
-                        <!-- <td class="text-right">
-                          $36,738
-                        </td> -->
                       </tr>
                       <tr>
                         <td>
                           Minerva Hooper
                         </td>
-                        <!-- <td>
-                          Curaçao
-                        </td> -->
+                        
                         <td>
-                          Sinaai-Waas
+                          Jakarta
                         </td>
-                        <!-- <td class="text-right">
-                          $23,789
-                        </td> -->
-                      </tr>
-                      <tr>
-                        <td>
-                          Sage Rodriguez
-                        </td>
-                        <!-- <td>
-                          Netherlands
-                        </td> -->
-                        <td>
-                          Baileux
-                        </td>
-                        <!-- <td class="text-right">
-                          $56,142
-                        </td> -->
-                      </tr>
-                      <tr>
-                        <td>
-                          Doris Greene
-                        </td>
-                        <!-- <td>
-                          Malawi
-                        </td> -->
-                        <td>
-                          Feldkirchen in Kärnten
-                        </td>
-                        <!-- <td class="text-right">
-                          $63,542
-                        </td> -->
-                      </tr>
-                      <tr>
-                        <td>
-                          Mason Porter
-                        </td>
-                        <!-- <td>
-                          Chile
-                        </td> -->
-                        <td>
-                          Gloucester
-                        </td>
-                        <!-- <td class="text-right">
-                          $78,615
-                        </td> -->
-                      </tr>
                     </tbody>
                   </table>
                 </div>
@@ -434,7 +371,7 @@
       </div>
       <footer class="footer">
         <div class=" container-fluid ">
-          <nav>
+          <!-- <nav>
             <ul>
               <li>
                 <a href="https://www.creative-tim.com">
@@ -452,7 +389,7 @@
                 </a>
               </li>
             </ul>
-          </nav>
+          </nav> -->
           <div class="copyright" id="copyright">
             &copy; <script>
               document.getElementById('copyright').appendChild(document.createTextNode(new Date().getFullYear()))
